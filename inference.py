@@ -21,7 +21,7 @@ parser.add_argument('--checkpoint_path', type=str, default="checkpoints/Wav2Lip.
 parser.add_argument('--segmentation_path', type=str, default="checkpoints/face_segmentation.pth",
 					help='Name of saved checkpoint of segmentation network', required=False)
 
-parser.add_argument('--sr_path', type=str, default='weights/4x_BigFace_v3_Blend.pth', 
+parser.add_argument('--sr_path', type=str, default='weights/4x_BigFace_v3_Clear.pth', 
 					help='Name of saved checkpoint of super-resolution network', required=False)
 
 parser.add_argument('--face', type=str, 
