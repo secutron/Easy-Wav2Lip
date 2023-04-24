@@ -21,7 +21,7 @@ parser.add_argument('--checkpoint_path', type=str, default="checkpoints/wav2lip_
 parser.add_argument('--segmentation_path', type=str, default="checkpoints/face_segmentation.pth",
 					help='Name of saved checkpoint of segmentation network', required=False)
 
-parser.add_argument('--sr_path', type=str, default='weights/realesr-general-x4v3.pth', 
+parser.add_argument('--sr_path', type=str, default='weights/4x_BigFace_v3_Blend.pth', 
 					help='Name of saved checkpoint of super-resolution network', required=False)
 
 parser.add_argument('--face', type=str, 
