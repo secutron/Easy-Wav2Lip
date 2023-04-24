@@ -15,7 +15,7 @@ from basicsr.utils.download_util import load_file_from_url
 
 parser = argparse.ArgumentParser(description='Inference code to lip-sync videos in the wild using Wav2Lip models')
 
-parser.add_argument('--checkpoint_path', type=str, default="checkpoints/wav2lip_gan.pth",
+parser.add_argument('--checkpoint_path', type=str, default="checkpoints/Wav2Lip.pth",
 					help='Name of saved checkpoint to load weights from', required=False)
 
 parser.add_argument('--segmentation_path', type=str, default="checkpoints/face_segmentation.pth",
@@ -309,7 +309,7 @@ def main():
 				run_params = load_sr(args.sr_path, device, args.enhance_face)
 			
 			model_path = load_file_from_url(
-				url='https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/wav2lip.pth',
+				url='https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/Wav2Lip.pth',
 				model_dir='checkpoints', progress=True, file_name=None)
 			model = load_model(args.checkpoint_path)
 			print ("Model loaded")
