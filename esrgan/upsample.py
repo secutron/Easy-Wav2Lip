@@ -20,7 +20,7 @@ def load_sr(model_path, device, face):
         model_path = os.path.normpath(model_path)
         if not os.path.exists(model_path):
             model_path = load_file_from_url(
-                url='https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/realesr-general-x4v3.pth',
+                url='https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/4x_BigFace_v3_Blend.pth',
                 model_dir='weights', progress=True, file_name=None)
         upsampler = RealESRGANer(
             scale=netscale,
