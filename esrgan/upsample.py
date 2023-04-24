@@ -20,7 +20,7 @@ def load_sr(model_path, device, face):
         model_path = os.path.normpath(model_path)
         if not os.path.exists(model_path):
             model_path = load_file_from_url(
-                url='https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth',
+                url='https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/realesr-general-x4v3.pth',
                 model_dir='weights', progress=True, file_name=None)
         upsampler = RealESRGANer(
             scale=netscale,
@@ -36,7 +36,7 @@ def load_sr(model_path, device, face):
             run_params=upsampler
         else:
             gfp = GFPGANer(
-                model_path='https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth',
+                model_path='https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/GFPGANv1.4.pth',
                 upscale=2,
                 arch='clean',
                 channel_multiplier=2,
@@ -45,7 +45,7 @@ def load_sr(model_path, device, face):
     else:
         run_params = ARCH_REGISTRY.get('CodeFormer')(dim_embd=512, codebook_size=1024, n_head=8, n_layers=9,
                                               connect_list=['32', '64', '128', '256']).to(device)
-        ckpt_path = load_file_from_url(url='https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth',
+        ckpt_path = load_file_from_url(url='https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/codeformer.pth',
                                        model_dir='weights/CodeFormer', progress=True, file_name=None)
         checkpoint = torch.load(ckpt_path)['params_ema']
         run_params.load_state_dict(checkpoint)
