@@ -21,7 +21,7 @@ parser.add_argument('--checkpoint_path', type=str, default="checkpoints/Wav2Lip.
 parser.add_argument('--segmentation_path', type=str, default="checkpoints/face_segmentation.pth",
 					help='Name of saved checkpoint of segmentation network', required=False)
 
-parser.add_argument('--sr_path', type=str, default='weights/realesr-general-x4v3.pth', 
+parser.add_argument('--sr_path', type=str, default='weights/4x_BigFace_v3_Blend.pth', 
 					help='Name of saved checkpoint of super-resolution network', required=False)
 
 parser.add_argument('--face', type=str, 
@@ -289,7 +289,7 @@ def main():
 			if not args.no_seg==True:
 				print("Loading segmentation network...")
 				seg_net = load_file_from_url(
-					url='https://github.com/GucciFlipFlops1917/wav2lip-hq-updated-ESRGAN/releases/download/v0.0.1/face_segmentation.pth',
+					url='https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/face_segmentation.pth',
 					model_dir='checkpoints', progress=True, file_name=None)
 				seg_net = init_parser(args.segmentation_path)
 			if not args.no_sr==True:
@@ -297,7 +297,7 @@ def main():
 				run_params = load_sr(args.sr_path, device, args.enhance_face)
 			
 			model_path = load_file_from_url(
-				url='https://github.com/GucciFlipFlops1917/wav2lip-hq-updated-ESRGAN/releases/download/v0.0.1/wav2lip_gan.pth',
+				url='https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/Wav2Lip.pth',
 				model_dir='checkpoints', progress=True, file_name=None)
 			model = load_model(args.checkpoint_path)
 			print ("Model loaded")
