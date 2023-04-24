@@ -8,7 +8,7 @@ import torch.utils.model_zoo as modelzoo
 
 # from modules.bn import InPlaceABNSync as BatchNorm2d
 
-resnet18_url = 'https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/resnet18-5c106cde.pth
+resnet18_url = 'https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/resnet18-5c106cde.pth'
 
 
 def conv3x3(in_planes, out_planes, stride=1):
