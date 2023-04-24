@@ -9,7 +9,7 @@ from .bbox import *
 from .detect import *
 
 models_urls = {
-    's3fd': 'https://www.adrianbulat.com/downloads/python-fan/s3fd-619a316812.pth',
+    's3fd': 'https://github.com/anothermartz/Easy-Wav2Lip/releases/download/Prerequesits/s3fd-619a316812.pth',
 }
 
 
