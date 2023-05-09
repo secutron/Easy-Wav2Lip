@@ -1,8 +1,8 @@
 # Audio to video lipsyncing made easy!
 
-Colab link: https://colab.research.google.com/github/anothermartz/Easy-Wav2Lip/blob/main/Easy-Wav2Lip_V3.ipynb
+Colab link: [https://colab.research.google.com/github/anothermartz/Easy-Wav2Lip/blob/main/Easy-Wav2Lip_V3.ipynb](https://colab.research.google.com/github/anothermartz/Easy-Wav2Lip/blob/v4/Easy_Wav2Lip_V4.ipynb)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anothermartz/Easy-Wav2Lip/blob/main/Easy-Wav2Lip_V3.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anothermartz/Easy-Wav2Lip/blob/v4/Easy_Wav2Lip_V4.ipynb)
 
 * Code adapted to google colab from [wav2lip-hq-updated-ESRGAN](https://github.com/GucciFlipFlops1917/wav2lip-hq-updated-ESRGAN) by [GucciFlipFlops1917](https://github.com/GucciFlipFlops1917)
 
@@ -20,9 +20,6 @@ Not only was this built on the shoulders of giants, I'm not even very good at co
 However I may offer some support in this discord:<br>
 Invite link: https://discord.gg/FNZR9ETwKY<br>
 Wav2Lip channel: https://discord.com/channels/667279414681272320/1076077584330280991
-
-# The rest of this Readme is for the upcoming v4 release
-v3 doesn't really need a readme so until v4 is released just look in the v3 colab for instructions - some of these options don't exist or work the same way in v3
 
 # Best practices:
 Video files:
