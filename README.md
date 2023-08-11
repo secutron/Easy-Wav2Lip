@@ -1,8 +1,11 @@
+Something broke! Click the colab link for a fixed version!
+Unfortunately, images don't seem to be working, just videos.
+
 # Audio to video lipsyncing made easy!
 
-Colab link: [https://colab.research.google.com/github/anothermartz/Easy-Wav2Lip/blob/v4/Easy_Wav2Lip_V4.ipynb](https://colab.research.google.com/github/anothermartz/Easy-Wav2Lip/blob/v4/Easy_Wav2Lip_V4.ipynb)
+Colab link: [https://colab.research.google.com/github/anothermartz/Easy-Wav2Lip/blob/v4/Easy_Wav2Lip_V4_fixed.ipynb](https://colab.research.google.com/github/anothermartz/Easy-Wav2Lip/blob/v4/Easy_Wav2Lip_V4_fixed.ipynb)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anothermartz/Easy-Wav2Lip/blob/v4/Easy_Wav2Lip_V4.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anothermartz/Easy-Wav2Lip/blob/v4/Easy_Wav2Lip_V4_fixed.ipynb)
 
 * Code adapted to google colab from [wav2lip-hq-updated-ESRGAN](https://github.com/GucciFlipFlops1917/wav2lip-hq-updated-ESRGAN) by [GucciFlipFlops1917](https://github.com/GucciFlipFlops1917)
 
